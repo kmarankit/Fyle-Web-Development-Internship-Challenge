@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Annual Income</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<style>
+.fa {font-size: small;color: rgb(96, 95, 95);}
+</style>
+</head>
+<body>
+    <div class="container">
+        <form>
+
+        <h2 class="text-center bold">Gross Annual Income</h2>
+        <label for="income">Enter gross annual income
+            <span>                
+                <div class="popover__wrapper">
+                    <i class="fa fa-question-circle-o"></i>
+                    <div class="popover__content">
+                        Gross anual income is the total salary in a year before any deductions.
+                    </div>
+                  </div>
+            </span>
+        </label>
+        <div class="input-fild">
+            <input type="text" id="income" name="income" placeholder="Enter gross annual income" autofocus required>
+            <span>
+                <div class="popover__wrapper">
+                    <i class="fa fa-exclamation-circle" style="color: red; display: none;"></i> 
+                    <div class="popover__content" style="top: -100px; width: auto; height: auto;">
+                        Please Enter Numbers Only.
+                    </div>
+                  </div>
+            </span>
+        </div>
+        <p id="p_income">Please Enter the annual income</p>      
+
+       
+        <label for="extra-income">Enter extra income<span>              
+            <div class="popover__wrapper">
+                <i class="fa fa-question-circle-o"></i>
+                <div class="popover__content">
+                    Please add your extra income from other sources.
+                </div>
+              </div>
+        </span></label>
+        <div class="input-fild">
+            <input type="text" id="extra-income" name="extra-income" placeholder="Enter extra income from other Sources" autofocus required>
+            <span>
+                <div class="popover__wrapper">
+                   <i class="fa fa-exclamation-circle" style="color: red; display: none;"></i>                    
+                    <div class="popover__content" style="top: -100px; width: auto; height: auto;">
+                        Please Enter Numbers Only.
+                    </div>
+                  </div>
+            </span>
+        </div>
+        <p id="p_extra-income">Please Enter the extra income</p>
+        
+        
+        <label for="age-group">Enter age group<span>                
+            <div class="popover__wrapper">
+                <i class="fa fa-question-circle-o"></i>
+                <div class="popover__content" style="top: -110px;">
+                   Please enter your age group.
+                  
+                </div>
+              </div>
+        </span></label>
+        <select id="age">
+            <option value="" disabled selected aria-placeholder="true">Select</option>
+            <option value="<40">Below 40</option>
+            <option value="≥ 40 & < 60">Between 40 to 60</option>
+            <option value="≥ 60">Above 60</option>
+        </select>
+        <p id="p_age-group">Please choose the age group</p>
+        
+        
+        <label for="deductions">Add total applicable deductions<span>                
+            <div class="popover__wrapper">
+                <i class="fa fa-question-circle-o"></i>
+                <div class="popover__content">
+                    Add the amount that will be deduct from your income.
+                </div>
+              </div>
+        </span></label>
+        <div class="input-fild">
+            <input type="text" id="deductions" name="deductions" placeholder="Add total applicable deduction" autofocus required >
+            <span>
+                <div class="popover__wrapper">
+                                      <i class="fa fa-exclamation-circle" style="color: red; display: none;"></i>                  
+                    <div class="popover__content" style="top: -100px; width: auto; height: auto;">
+                        Please Enter Numbers Only.
+                    </div>
+                  </div>
+            </span>
+        </div>
+        <p id="p_deductions">Please Enter deduction amount</p>
+        
+        <button class="open-modal-btn">Submit</button>
+    </form>
+    </div>
+    <div class="modal-overlay hide">
+        <div class="modal-wrapper">
+            <h1>Tax Calculator</h1>
+            <div class="modal-content">
+                <div class="table-box" >
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Tax</th>                     
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="OverAll-Income">
+                            <td>Total Income: <span style="font-size: xx-small;color: black;">(income+extra income-deduction)</span></td>
+                            <td id="total-amount">00.00</td>
+                          </tr>
+                      <tr>
+                        <td>Taxable Income: <br><span style="font-size: xx-small;color: black;">(overall income-800000)</span></td>
+                        <td id="taxable-income">00.00</td>
+                      </tr>
+                      <tr>
+                        <td>Tax Rate: </td>
+                        <td id="tax-rate">00.00</td>
+                      </tr>
+                      <tr>
+                        <td>Tax Amount: </td>
+                        <td id="tax-amount">00.00</td>
+                      </tr>
+                      <tr>
+                        <td>Overall Income: </td>
+                        <td id="overall-amount">00.00</td>
+                      </tr>
+                      
+                      
+                    </tbody>
+                  </table>
+                 </div> 
+            </div>
+            <div class="no-tax" style="display: none;">
+                <h4 style="color: rgb(120, 122, 122);font-weight: 400;"></h4>
+                <h2>You are not liable to pay tax.</h2>
+                <h3 style="color: rgb(7, 96, 87);"></h3>
+            </div>
+            <div class="close-btn-wrapper">
+                <button class="close-modal-btn">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html> 
+ 
