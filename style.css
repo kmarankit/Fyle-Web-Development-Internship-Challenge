@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+input {
+  caret-color: rgb(15, 150, 148);
+  font-size: larger;
+}
+.empty-input::placeholder {
+  color: red;
+}
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.container {
+  position: relative;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+label, input, button{
+  display: block;
+  color: rgb(99, 120, 119);
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+select{
+  background: #ecf0f3;
+  padding: 1px;
+  padding-left: 2px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  color: #61707e;
+  text-align: center;
+  font-size:smaller;
+  font-family: math;
+}
+ option{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  color: #61707e;
+}
+
+label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: larger;
+  font-family: math;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+label:nth-of-type(3) {
+  margin-top: 12px;
+}
+label:nth-of-type(4) {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+input::placeholder {
+  color: rgb(195, 191, 191);
+}
+input::placeholder{
+  font-size: small;
+}
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  width: 90%;
+  height: auto;
+  font-size: 14px;
+  border-radius: 50px;
+  /* box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; */
+  color: #61707e;
+  text-align: center;
+  font-size:larger ;
+  font-family: math;
+}
+
+.input-fild{
+  display: flex;
+  width: 100%;
+  background-color: red;
+  height: auto;
+
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  width: 90%;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  color: #61707e;
+  text-align: center;
+  font-size:larger ;
+  font-family: math;
+}
+
+.input-fild .fa{
+margin-top: center; 
+}
+
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #05ada2;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #45586b, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+h2{
+    color: #05ada2;
+    font-size: x-large;
+    font-family: math; 
+}
+span{
+    color: rgb(180, 79, 79);
+}
+
+p{
+  font-size: xx-small;
+  display: none;
+  color: red;
+}
+/* Model ---------------------- */
+
+.modal-overlay {
+  background: rgba(145, 141, 141, 0.7);
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.modal-wrapper {
+  width:60%;
+  height:auto;
+  background: rgb(230, 232, 233);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  box-shadow: 6px 16px 20px #6f6c6c, -16px -10px 16px white;
+
+}
+
+.open-modal-btn-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal-btn{
+  padding: 8px;
+  background: #05ada2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: ghostwhite;
+  font-weight: 5px;
+  margin-top: 250px;
+  cursor: pointer;
+  width: 100px;
+  margin-left:40%;
+}
+
+.close-btn-wrapper {
+  /* display: flex; */
+  /* background-color: rgb(76, 42, 42); */
+  margin-top: -200px;
+}
+
+.modal-content {
+  margin: 20px auto;
+  max-width: 210px;
+  width: 100%;
+ 
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(106, 121, 123);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table-box {
+  display: block;
+  border: 1px solid #09c3d0;
+  border-radius: 20px;
+  overflow: hidden;
+  width: fit-content;
+  margin-left: -30px;
+}
+
+.table-box table {
+  width: auto;
+  border-collapse: collapse;
+  color: rgb(6, 80, 80);
+  background-color: rgb(216, 232, 232);
+ 
+}
+
+.table-box th, .table-box td  {
+  border: 1px solid #0aabab;
+  padding: 2px;
+  text-align: center;
+  
+}
+
+
+.table-box th {
+  background-color: hsl(180, 50%, 71%);
+  text-align: center;
+ 
+}
+
+.table-box tbody tr:nth-child(even) {
+  background-color: #f2f1f1;
+}
+
+.table-box tbody tr:nth-child(5) {
+background-color: rgb(6, 66, 71);
+font-weight:600;
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(248, 246, 246);
+}
+
+/* -------Popover------------- */
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button 
+    {
+        display: none;
+    }
+
+
+.popover__title {
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgb(7, 177, 92);
+  text-align: center;
+  padding: 15px 0;
+}
+.popover__title:hover{
+    color: rgb(163, 184, 184);
+}
+
+.popover__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.popover__content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -144px; /* Adjust this value to position the popover above the label */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(3, 141, 97, 0.023); /* Use rgba to specify transparency */
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: auto;
+  height: auto;
+  color: black;
+  border-radius: 20px;
+  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+  box-shadow: 6px 10px 10px #6f6c6c, -16px -10px 16px white;
+font-size: x-small;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.popover__content:before {
+  position: absolute;
+  content: "";
+  right: calc(50% - 10px);
+  bottom: -10px;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #fbfbfbaa transparent transparent transparent;
+}
+
+.popover__wrapper:hover .popover__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popover__trigger {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
