@@ -23,7 +23,7 @@ An aspiring full-stack developer aged 23, currently pursuing a Master of Compute
 
 1. The rounded question mark serves as a Popover, providing additional details about the corresponding input field.
 
-![Screenshot 1](https://github.com/kmarankit/Fyle-Web-Development-Internship-Challenge/blob/main/Test%20Screenshots/Screenshot%201.png?raw=true)
+
 
 ![Screenshot 1.1](https://github.com/kmarankit/Fyle-Web-Development-Internship-Challenge/blob/main/Test%20Screenshots/Screenshot%201.1.png?raw=true)
 
